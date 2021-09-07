@@ -28,15 +28,16 @@
     <%-- <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet"> --%>
    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container">
 		<!-- Sidebar -->
 		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 15%">
-		  <h4 class="w3-bar-item">Menu</h4>
-		  <a href="/home" class="w3-bar-item w3-button">Home</a>
-		  <a href="create-periodical" class="w3-bar-item w3-button">Create periodical</a>
-		  <a href="#" class="w3-bar-item w3-button">Bucket</a>
+		  <div style="user-select: none; border-bottom: 2px solid gray;"><h4 class="w3-bar-item">Menu</h4></div>
+		  <a href="/home" class="w3-bar-item w3-button"><i class="fa fa-home w3-large"></i> Home</a>
+		  <a href="create-periodical" class="w3-bar-item w3-button"><i class="fa fa-book w3-large"></i> Create periodical</a>
+		  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cart-arrow-down w3-large"></i> Bucket</a>
 		</div>
 
 		<%-- <c:choose>
@@ -73,6 +74,7 @@
 										<h4 style="white-space: nowrap; overflow: hidden;">${currentPeriodical.name}</h4>
 									</header>
 									<img src="https://findicons.com/files/icons/366/icomic/128/images.png" alt="image" style="width: 80%; margin: 0 10%;">
+									<!-- <img src="/images/default.png" alt="image" style="width: 80%; margin: 0 10%;">  --> 
 									<div class="w3-container w3-center" style="align: bottom;">
 										<p>${currentPeriodical.description}</p>
 										<hr>
