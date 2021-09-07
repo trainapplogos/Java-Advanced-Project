@@ -24,7 +24,8 @@ public class User {
 	
 	@NotNull
 	private String password;
-	private String passwordConfirm; //?
+	
+	private String passwordConfirm;
 	
 	@Enumerated(EnumType.STRING)
 	private UserRole role;
@@ -38,7 +39,6 @@ public class User {
 		this.lastName = user.lastName;
 		this.role = user.role;
 		this.password = user.password;
-		//passwordConfirm ? don`t we need this
 	}
 
 	public User(String email, String firstName, String lastName, UserRole role, String password) {
@@ -58,6 +58,11 @@ public class User {
 		this.password = password;
 	}
 
+	//custom getter
+	public String getUserName() {
+		return email;
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -112,10 +117,6 @@ public class User {
 
 	public void setPasswordConfirm(String passwordConfirm) {
 		this.passwordConfirm = passwordConfirm;
-	}
-	
-	public String getUserName() {
-		return email;
 	}
 
 	@Override
