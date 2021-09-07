@@ -24,6 +24,7 @@ public class User {
 	
 	@NotNull
 	private String password;
+	
 	private String passwordConfirm;
 	
 	@Enumerated(EnumType.STRING)
@@ -38,7 +39,6 @@ public class User {
 		this.lastName = user.lastName;
 		this.role = user.role;
 		this.password = user.password;
-		//passwordConfirm ? don`t we need this
 	}
 
 	public User(String email, String firstName, String lastName, UserRole role, String password) {
